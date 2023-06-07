@@ -13,6 +13,6 @@ i = 0
 while i < 60:
     return_value, image = camera.read()
     cv2.imwrite(f'/home/jon/temp/capture/image{get_sequence(i)}.png', image)
-    time.sleep(0.1)
+    time.sleep(20)
     i += 1
 del(camera)
